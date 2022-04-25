@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/brianmirandadev/imageEditor/issues"
   },
-  "homepage": "https://github.com/brianmirandadev/imageEditor#readme"
+  "homepage": "https://github.com/brianmirandadev/imageEditor#readme",
+  "dependencies": {
+    "sharp": "^0.30.3"
+  }
 }
