@@ -1,6 +1,15 @@
+const resize = require("./resize.js");
 const fs = require("fs");
-const sharp = require("sharp");
-let fileName = process.argv[3];
-let path = process.argv[5];
-let width = Number(process.argv[6]);
+const compress = require("./compress.js");
+
+let args = process.argv.slice(2);
+let action = args[0];
+let inputPath = args[1];
+let width = Number(args[2]);
+
+if (action == "resize") {
+	resize(inputPath, width);
+} else if (action == "compress") {
+	compress(inputPath);
+}
 
