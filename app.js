@@ -1,5 +1,4 @@
 const resize = require("./resize.js");
-const fs = require("fs");
 const compress = require("./compress.js");
 
 let args = process.argv.slice(2);
